@@ -1,0 +1,130 @@
+/*estilizando todos os elementos, garatindo que seja mais fácil
+controlar o tamanho dos elementos, com o border-box; 
+*/
+* {
+  box-sizing: border-box;
+}
+
+/*estilizando o corpo da página, organizando os elementos com o display flex, facilitando a manipulação;
+centralizando o conteudo do corpo(body) horizontalmente com o justify-content;
+ e centralizando o conteudo do corpo(body) verticalmente; por último com o min-height garanto
+ que o conteudo do meu site seja visivél na tela. */
+body {
+  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 97vh;
+}
+
+/*estilizando o div principal, alterando a cor da fonte; organizando os elementos com o
+ display flex, centralizando o conteudo horizontalmente com o justify-content; garanto
+ que o conteudo do meu site seja visivél na tela com o min-height; altero a fonte; e adiciono
+ espaçamento interno.
+ */
+.principal{
+	
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	min-height: 70vh;
+	font-family: "Poppins", sans-serif; 
+	padding: 13px 40px;
+	
+}
+
+/*customizando o formulário, adicionando espaçamento interno para deixar alinhado.*/
+form{
+	
+	padding: 1em 3em 1.4em 3em;
+	
+}
+
+/*estilizando o h1, alterando tamanho da fonte e deixando o texto no centro.*/
+.principal h1{
+	
+	font-size: 36px;
+	text-align: center;
+	
+	
+}
+
+/*estilizando os campos do formulário, onde a posição é relativa, a largura será de 100%
+e altura de 15px, por fim definindo a margem 30px 0 (criando um espaço acima e abaixo).*/
+.principal .campo{
+	
+	position: relative;
+	width: 100%;
+	height: 15px;
+	margin: 30px 0;
+	
+}
+
+/*estilizando os campos com as perguntas do formulário, definindo o width(largura) 
+e height(altura) em 100% fazendo com o campo ocupe todo o espaço disponivel; removendo a 
+borda padrão do campo com o border none; removendo o contorno do campo; definindo uma borda
+de 1px sólida com cor branca e arredondada; e por fim, definindo o espaçamento interno em 7px.  */
+.campo label{
+	
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	border: 1px solid white;
+	border-radius: 9px;
+	padding: 7px;
+
+}
+
+
+/*estilizando as respostas, adicionando espaçamento interno;removendo a 
+borda padrão do campo com o border none; adicionando uma borda inferior de 1px sólida e branca;
+e espaçamento inferior de 1px; alterando cor de fundo; definindo a largura em 7em; alterando
+tamanho da fonte e cor. */
+#campoTexto{
+	
+	padding: 4.5px;
+	border: none;
+	border-bottom: 1px solid white;
+	padding-bottom: 1px;
+	background-color: transparent;
+	width: 7em;
+	font-size: 15px;
+	color:white;
+	
+}
+
+/*estilizando o h1, alterando tamanho da fonte; com posição absoluta e posicionado a 
+direita em 20px; deixando o texto no centro.*/
+.principal h2{
+	
+	font-size: 30px;
+	position:absolute;
+	right:20px;
+	text-align: center;
+	
+	
+}
+
+/*estilizando o video de fundo, definindo a posição como absoluta; com o right em 0 posiciono
+o vídeo no canto superior direito e com o bottom em 0 posiciono o vídeo no canto inferior
+direito; com o min-width e min-height, a largura e altura mínima do vídeo sejam de 100%, com isso,
+todo espaço disponível será preenchido; a largura(width) e altura(height) é de 100%; 
+o uso o z-index para garantir que o vídeo não cubra os outros elementos; e por fim,
+com object-fit o vídeo é dimensionado para preencher todo o seu contêiner.*/
+.video{
+	
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+    object-fit: cover;
+
+}
+
+
+

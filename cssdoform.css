@@ -1,0 +1,186 @@
+/*estilizando todos os elementos, deixando-os com margem igual a 0; 
+definindo o espaço interno igual a zero(com o padding); garatindo que seja mais fácil
+controlar o tamanho dos elementos, com o border-box; e por fim definindo a fonte
+para todos os elementos.
+*/
+*{
+	
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	
+	
+}
+
+/*estilizando o corpo da página, organizando os elementos com o display flex, facilitando a manipulação;
+centralizando o conteudo do corpo(body) horizontalmente com o justify-content;
+ e centralizando o conteudo do corpo(body) verticalmente; por último com o min-height garanto
+ que o conteudo do meu site seja visivél na tela. */
+
+body{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	
+	
+	
+}
+
+
+/*dando estilo para div principal(meu formulário); definindo a largura(width), deixando o plano
+de fundo(background) transparente, mudando a cor da fonte, e criando um espaço interno(padding)
+de 30px 40px. */
+.principal{
+	
+	width: 420px;
+	background: transparent;
+	color: #fff;
+	padding: 30px 40px;
+	
+	
+}
+
+/*estilizando o h1, onde a fonte é de 36px e deixando-o no centro.*/
+
+.principal h1{
+	
+	font-size: 36px;
+	text-align: center;
+	
+	
+}
+
+
+/*dando estilo aos campos usuário e senha, onde a posição é relativa, a largura será de 100%
+e altura de 50px, por fim definindo a margem 30px 0 (criando um espaço acima e abaixo). */
+.principal .campoT{
+	
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
+	
+}
+
+/*dando estilo aos campos usuário e senha, definindo o width(largura) e height(altura) em 100%
+fazendo com o campo ocupe todo o espaço disponivel; deixando o plano
+de fundo(background) transparente; removendo a borda padrão do campo com o border none; removendo o
+contorno do campo; definindo uma borda de 2px solida com cor branca; arrendondando a borda com 
+o border-radius; definindo como 16px a fonte do campo; modificando a cor do texto do campo para branco;
+e por fim, definindo o espaço interno(superior, direito, inferior e esquerdo).  */
+.campoT input{
+	
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 40px;
+	font-size: 16px;
+	color: fff;
+	padding: 20px 45px 20px 20px;
+	
+	
+}
+
+/*definindo a cor do texto(branca) que aparece dentro do campo de entrada*/
+.campoT input::placeholder{
+	
+	color: #fff;
+	
+}
+
+/*estilizando os icons do usuario e da senha; onde defino a posição dos elementos como absoluta, 
+posicionando os elementos 20px a direita e com 50% de  distância do topo; centralizo verticalmente
+os elementos com o transform translateY (-50%; e por último, defino o tamanho da fonte em 20px.*/
+
+.campoT i{
+	
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	
+}
+
+
+/*estilizando os elementos dentro do div lembrarSenha; de início, organizo os elementos com o display flex,
+facilitando a manipulação; defino um maior espaço possível aos elementos com o space-between;
+defino o tamanho da fonte em 14.5; e por fim definindo a margem -15px 0 15px(criando
+ um espaço acima e abaixo, sem margem nas laterais). */
+.principal .lembrarSenha{
+	
+	display: flex;
+	justify-content: space-between;
+	font-size: 14.5px;
+	margin: -15px 0 15px;
+	
+	
+	
+}
+
+/*dando estilo ao label e input; definindo uma margem de 3px. */
+.lembrarSenha label input{
+	
+	margin-right: 3px;
+	
+	
+}
+
+/*estilizando os icons de flor; onde possuem cor branca*/
+.lembrarSenha i{
+	
+	color: #fff;
+	
+}
+
+/*estilizando o botão; onde a largura(width) é de 100% e altura(height) de 45px;
+ e fundo(background) branco; removo a borda padrão do campo com o border none e removo o
+contorno do campo; arrendondando a borda com o border-radius; adiciono uma sobra ao redor; defino
+o cursor do mouse como uma mão ao passar em cima do elemento com o cursor pointer;
+defino a fonte do elemento em 16px; defino a cor do texto em tom cinza escuro;
+e por fim, defino a espessura da fonte como 600. */
+.principal .btn{
+	
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0,0,0, .1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+	
+}
+
+
+/*estilizando o video de fundo, definindo a posição como absoluta; com o right em 0 posiciono
+o vídeo no canto superior direito e com o bottom em 0 posiciono o vídeo no canto inferior
+direito; com o min-width e min-height, a largura e altura mínima do vídeo sejam de 100%, com isso,
+todo espaço disponível será preenchido; a largura(width) e altura(height) é de 100%; 
+o uso o z-index para garantir que o vídeo não cubra os outros elementos; e por fim,
+com object-fit o vídeo é dimensionado para preencher todo o seu contêiner.*/
+.video{
+	
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+    object-fit: cover;
+
+}
+
+
